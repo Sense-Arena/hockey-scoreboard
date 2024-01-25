@@ -12,7 +12,7 @@ export const App = () => {
         <span>COMPETITION ENDS TODAY AT 5 PM</span>
       </div>
       <div className="top-b-2">
-        <span>NHL SENSE ARENA DRILLS DEMO EVERY ROUND HOUR</span>
+        <span>NHL Sense Arena drill showcase runs at the top of every hour</span>
       </div>
 
       <div className="content-container">
