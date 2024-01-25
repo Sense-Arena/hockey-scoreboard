@@ -1,12 +1,13 @@
 import { useQuery } from 'react-query';
 import './App.css';
 import { getScoreboard } from './core/api/scoreboard';
+import { wrapAsset } from './core/assets';
 
 export const App = () => {
   const { data } = useQuery('scoreboard', getScoreboard, { refetchInterval: 5000 });
 
   return (
-    <div style={{ background: 'url(/imgs/compt_bg.jpg)', minHeight: '100vh', color: 'var(--text)' }}>
+    <div style={{ background: `url(${wrapAsset('/imgs/compt_bg.jpg')})`, minHeight: '100vh', color: 'var(--text)' }}>
       <div className="top-b-1">
         <span>COMPETITION ENDS TODAY AT 5 PM</span>
       </div>
