@@ -88,7 +88,9 @@ export const App = () => {
             <tbody>
               {data?.standings.goalies.recent.map(gt => (
                 <tr key={gt.name}>
-                  <td>{gt.name}</td>
+                  <td>
+                    {gt.position}. {gt.name}
+                  </td>
                   <td className="mwTD">{gt.score}</td>
                   <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
                 </tr>
@@ -112,7 +114,9 @@ export const App = () => {
             <tbody>
               {data?.standings.players.recent.map(gt => (
                 <tr key={gt.name}>
-                  <td>{gt.name}</td>
+                  <td>
+                    {gt.position}. {gt.name}
+                  </td>
                   <td className="mwTD">{gt.score}</td>
                   <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
                 </tr>
