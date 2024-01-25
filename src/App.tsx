@@ -37,7 +37,7 @@ export const App = () => {
                     {index + 1}. {gt.name}
                   </td>
                   <td className="mwTD">{gt.score}</td>
-                  <td className="mwTD2">{gt.reaction_time.toFixed(2)}</td>
+                  <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
                 </tr>
               ))}
             </tbody>
@@ -65,7 +65,7 @@ export const App = () => {
                     {index + 1}. {gt.name}
                   </td>
                   <td className="mwTD">{gt.score}</td>
-                  <td className="mwTD2">{gt.reaction_time.toFixed(2)}</td>
+                  <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
                 </tr>
               ))}
             </tbody>
@@ -90,7 +90,7 @@ export const App = () => {
                 <tr key={gt.name}>
                   <td>{gt.name}</td>
                   <td className="mwTD">{gt.score}</td>
-                  <td className="mwTD2">{gt.reaction_time.toFixed(2)}</td>
+                  <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
                 </tr>
               ))}
             </tbody>
@@ -114,7 +114,7 @@ export const App = () => {
                 <tr key={gt.name}>
                   <td>{gt.name}</td>
                   <td className="mwTD">{gt.score}</td>
-                  <td className="mwTD2">{gt.reaction_time.toFixed(2)}</td>
+                  <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
                 </tr>
               ))}
             </tbody>
