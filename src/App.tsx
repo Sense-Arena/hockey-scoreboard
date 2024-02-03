@@ -24,7 +24,7 @@ export const App = () => {
   return (
     <div style={{ background: `url(${wrapAsset('/imgs/compt_bg.jpg')})`, minHeight: '100vh', color: 'var(--text)' }}>
       <div className="top-b-1">
-        <span>COMPETITION ENDS TODAY AT {getEndTimeOfCompetition()}</span>
+        <span>COMPETITION ENDS TOMORROW AT {getEndTimeOfCompetition()}</span>
       </div>
       <div className="top-b-2">
         <span>NHL Sense Arena drill showcase runs at the top of every hour</span>
