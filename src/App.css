@@ -1,8 +1,8 @@
 .top-b-1 {
-  background-color: var(--top-banner-1-bg);
-  color: var(--text-dark-blue);
-  width: 100vw;
-  height: 86px;
+  background-color: var(--text-red);
+  color: #FFF;
+  width: 100%;
+  height: 105px;
   text-align: center;
   font-size: 40px;
   font-weight: 600;
@@ -12,23 +12,11 @@
   text-transform: uppercase;
 }
 
-.top-b-2 {
-  background-color: var(--top-banner-2-bg);
-  color: #fff;
-  width: 100vw;
-  height: 86px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-}
 
 .content-container {
   background-color: var(--bg-color);
   width: calc(100vw - 140px);
+  min-height: calc(100vh - 245px);
   padding: 70px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
