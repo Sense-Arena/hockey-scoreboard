@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <div style={{ minHeight: '100vh', color: 'var(--text)' }}>
       <div className="top-b-1">
-        <span>COMPETITION ENDS ON SUNDAY AT 4 PM</span>
+        <span>COMPETITION ENDS ON SATURDAY AT 4 PM</span>
       </div>
 
       <div className="content-container">
