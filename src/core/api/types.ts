@@ -4,9 +4,9 @@ export type BaseResponse<T> = {
 
 export type ScoreItem = {
   name: string;
-  score: number;
   position: number;
-  reaction_time: number;
+  score_1: number;
+  score_2: number;
 };
 
 export type ScoreboardData = {

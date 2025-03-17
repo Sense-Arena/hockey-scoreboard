@@ -7,10 +7,6 @@ export const App = () => {
 
   return (
     <div style={{ minHeight: '100vh', color: 'var(--text)' }}>
-      <div className="top-b-1">
-        <span>COMPETITION ENDS ON SATURDAY AT 4 PM</span>
-      </div>
-
       <div className="content-container">
         <div>
           <div className="content-head">
@@ -22,8 +18,8 @@ export const App = () => {
             <thead>
               <tr>
                 <td></td>
-                <td className="mwTD">saves</td>
-                <td className="mwTD2">reaction time</td>
+                <td className="mwTD"> SV%</td>
+                <td className="mwTD2">ANG%</td>
               </tr>
             </thead>
             <tbody>
@@ -32,8 +28,8 @@ export const App = () => {
                   <td>
                     {index + 1}. {gt.name}
                   </td>
-                  <td className="mwTD">{gt.score}</td>
-                  <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
+                  <td className="mwTD">{gt.score_1}</td>
+                  <td className="mwTD2">{gt.score_2.toFixed(0)}</td>
                 </tr>
               ))}
             </tbody>
@@ -50,8 +46,8 @@ export const App = () => {
             <thead>
               <tr>
                 <td></td>
-                <td className="mwTD">goals</td>
-                <td className="mwTD2">reaction time</td>
+                <td className="mwTD">DM%</td>
+                <td className="mwTD2">RLT</td>
               </tr>
             </thead>
             <tbody>
@@ -60,8 +56,8 @@ export const App = () => {
                   <td>
                     {index + 1}. {gt.name}
                   </td>
-                  <td className="mwTD">{gt.score}</td>
-                  <td className="mwTD2">{gt.reaction_time.toFixed(3)}</td>
+                  <td className="mwTD">{gt.score_1}</td>
+                  <td className="mwTD2">{gt.score_2.toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
