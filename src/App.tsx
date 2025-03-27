@@ -18,8 +18,8 @@ export const App = () => {
             <thead>
               <tr>
                 <td></td>
-                <td className="mwTD"> SV%</td>
-                <td className="mwTD2">ANG%</td>
+                <td className="mwTD">ANG%</td>
+                <td className="mwTD2">RCT</td>
               </tr>
             </thead>
             <tbody>
