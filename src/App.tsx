@@ -1,9 +1,9 @@
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import './App.css';
 import { getScoreboard } from './core/api/scoreboard';
 
 export const App = () => {
-  const { data } = useQuery('scoreboard', getScoreboard, { refetchInterval: 5000 });
+  const { data } = useQuery({ queryKey: ['scoreboard'], queryFn: getScoreboard, refetchInterval: 5000 });
 
   return (
     <div style={{ minHeight: '100vh', color: 'var(--text)' }}>
@@ -18,7 +18,7 @@ export const App = () => {
             <thead>
               <tr>
                 <td></td>
-                <td className="mwTD">ANG%</td>
+                <td className="mwTD">SAVE%</td>
                 <td className="mwTD2">RCT</td>
               </tr>
             </thead>
@@ -46,7 +46,7 @@ export const App = () => {
             <thead>
               <tr>
                 <td></td>
-                <td className="mwTD">DM%</td>
+                <td className="mwTD">SCORE</td>
                 <td className="mwTD2">RLT</td>
               </tr>
             </thead>
